@@ -1,0 +1,24 @@
+# GitHub Pages設定
+title: Portfolio Site
+description: Personal portfolio website
+baseurl: ""
+url: ""
+
+# プラグイン設定
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 除外ファイル
+exclude:
+  - node_modules
+  - .github
+  - __tests__
+  - __mocks__
+  - jest.config.js
+  - jest.setup.js
+  - babel.config.js
+  - package.json
+  - package-lock.json
+  - .gitignore
+  - README.md

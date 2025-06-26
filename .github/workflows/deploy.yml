@@ -34,16 +34,13 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Build project
-        run: npm run build
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: "."
 
   deploy:
     environment:
