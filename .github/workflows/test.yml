@@ -1,0 +1,124 @@
+name: Test
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linting
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: Check HTML validity
+        run: |
+          npm install -g html-validate
+          html-validate "**/*.html"
+
+      - name: Check CSS validity
+        run: |
+          npm install -g stylelint stylelint-config-standard
+          npx stylelint "**/*.css"
+
+      - name: Check JavaScript syntax
+        run: |
+          npm install -g eslint
+          npx eslint "**/*.js"
+
+  accessibility:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install pa11y
+        run: npm install -g pa11y
+
+      - name: Run accessibility tests
+        run: |
+          pa11y --standard WCAG2AA index.html
+          pa11y --standard WCAG2AA pages/certification.html
+          pa11y --standard WCAG2AA pages/portfolio.html
+          pa11y --standard WCAG2AA pages/contact.html
+
+  performance:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install lighthouse
+        run: npm install -g lighthouse
+
+      - name: Run performance audit
+        run: |
+          lighthouse --output=json --output-path=./lighthouse-report.json --chrome-flags="--headless" index.html
+          lighthouse --output=json --output-path=./lighthouse-report-cert.html --chrome-flags="--headless" pages/certification.html
+
+      - name: Upload lighthouse report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: lighthouse-report*.json
+
+  security:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run security audit
+        run: npm audit --audit-level moderate
+
+      - name: Check for secrets
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: .
+          base: HEAD~1

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <meta name="description" content="個人ポートフォリオサイトです。スキル、資格、プロジェクトをご紹介します。">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            'page_title': 'Portfolio - Home',
+            'page_location': window.location.href
+        });
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/certification.html" class="nav-link">Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to My Portfolio</h1>
+                    <p class="hero-subtitle">フルスタック開発者として、創造的なソリューションを提供します</p>
+                    <div class="hero-buttons">
+                        <a href="pages/portfolio.html" class="btn btn-primary">作品を見る</a>
+                        <a href="pages/contact.html" class="btn btn-secondary">お問い合わせ</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/profile.jpg" alt="Profile" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>こんにちは！私は情熱的な開発者です。最新の技術を学び、実用的なアプリケーションを作成することに情熱を持っています。</p>
+                        <p>フロントエンドからバックエンドまで、幅広い技術スタックを扱い、ユーザー体験を重視した開発を行っています。</p>
+                    </div>
+                    <div class="skills">
+                        <h3>技術スキル</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Updates Section -->
+        <section class="recent-updates">
+            <div class="container">
+                <h2 class="section-title">Recent Updates</h2>
+                <div class="updates-grid">
+                    <div class="update-card">
+                        <h3>新しい資格を取得しました</h3>
+                        <p>AWS Solutions Architect Associate</p>
+                        <span class="update-date">2024年1月</span>
+                    </div>
+                    <div class="update-card">
+                        <h3>新しいプロジェクトを公開</h3>
+                        <p>Eコマースアプリケーション</p>
+                        <span class="update-date">2024年1月</span>
+                    </div>
+                    <div class="update-card">
+                        <h3>技術記事を投稿</h3>
+                        <p>React Hooksのベストプラクティス</p>
+                        <span class="update-date">2023年12月</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>個人ポートフォリオサイト</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/certification.html">Certification</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+
+</html>

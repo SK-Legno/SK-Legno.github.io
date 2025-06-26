@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <meta name="description" content="自作アプリケーションとプロジェクトをご紹介します。">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            'page_title': 'Portfolio - Projects',
+            'page_location': window.location.href
+        });
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certification.html" class="nav-link">Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Portfolio</h1>
+                    <p class="hero-subtitle">自作アプリケーションとプロジェクトをご紹介します</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <div class="container">
+                <h2 class="section-title">プロジェクト一覧</h2>
+
+                <!-- Featured Projects -->
+                <div class="project-category">
+                    <h3 class="category-title">注目プロジェクト</h3>
+                    <div class="project-grid">
+                        <div class="project-card featured" data-category="web-app">
+                            <div class="project-image">
+                                <img src="../assets/images/ecommerce-app.jpg" alt="E-commerce App" class="project-img">
+                            </div>
+                            <div class="project-content">
+                                <h4>Eコマースアプリケーション</h4>
+                                <p>React、Node.js、MongoDBを使用したフルスタックEコマースアプリケーション</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Stripe</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured" data-category="mobile-app">
+                            <div class="project-image">
+                                <img src="../assets/images/task-manager.jpg" alt="Task Manager" class="project-img">
+                            </div>
+                            <div class="project-content">
+                                <h4>タスク管理アプリ</h4>
+                                <p>React Nativeで開発したモバイルタスク管理アプリケーション</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">Redux</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">App Store</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Applications -->
+                <div class="project-category">
+                    <h3 class="category-title">Webアプリケーション</h3>
+                    <div class="project-grid">
+                        <div class="project-card" data-category="web-app">
+                            <div class="project-content">
+                                <h4>天気予報アプリ</h4>
+                                <p>OpenWeatherMap APIを使用した天気予報アプリケーション</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="web-app">
+                            <div class="project-content">
+                                <h4>ToDoリスト</h4>
+                                <p>ローカルストレージを使用したシンプルなToDoリスト</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">LocalStorage</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="web-app">
+                            <div class="project-content">
+                                <h4>計算機アプリ</h4>
+                                <p>基本的な四則演算ができる計算機アプリケーション</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS Grid</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science Projects -->
+                <div class="project-category">
+                    <h3 class="category-title">データサイエンス</h3>
+                    <div class="project-grid">
+                        <div class="project-card" data-category="data-science">
+                            <div class="project-content">
+                                <h4>株価予測モデル</h4>
+                                <p>機械学習を使用した株価予測システム</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">scikit-learn</span>
+                                    <span class="tech-tag">pandas</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Jupyter Notebook</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="data-science">
+                            <div class="project-content">
+                                <h4>データ可視化ダッシュボード</h4>
+                                <p>PlotlyとDashを使用したインタラクティブなデータ可視化</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Plotly</span>
+                                    <span class="tech-tag">Dash</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Used Section -->
+        <section class="skills-used">
+            <div class="container">
+                <h2 class="section-title">使用技術</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>フロントエンド</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">React Native</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>バックエンド</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Express.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>データベース</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>その他</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>個人ポートフォリオサイト</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="certification.html">Certification</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/analytics.js"></script>
+</body>
+
+</html>
