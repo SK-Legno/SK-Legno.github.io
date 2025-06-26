@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Projects</title>
-    <meta name="description" content="自作アプリケーションとプロジェクトをご紹介します。">
+    <meta name="description" content="トレードノートアプリをご紹介します。">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -63,7 +63,7 @@
             <div class="hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">Portfolio</h1>
-                    <p class="hero-subtitle">自作アプリケーションとプロジェクトをご紹介します</p>
+                    <p class="hero-subtitle">トレードノートアプリをご紹介します</p>
                 </div>
             </div>
         </section>
@@ -71,138 +71,41 @@
         <!-- Projects Section -->
         <section class="projects">
             <div class="container">
-                <h2 class="section-title">プロジェクト一覧</h2>
+                <h2 class="section-title">プロジェクト</h2>
 
-                <!-- Featured Projects -->
+                <!-- Trade Note App -->
                 <div class="project-category">
-                    <h3 class="category-title">注目プロジェクト</h3>
+                    <h3 class="category-title">トレードノートアプリ</h3>
                     <div class="project-grid">
-                        <div class="project-card featured" data-category="web-app">
-                            <div class="project-image">
-                                <img src="../assets/images/ecommerce-app.jpg" alt="E-commerce App" class="project-img">
-                            </div>
-                            <div class="project-content">
-                                <h4>Eコマースアプリケーション</h4>
-                                <p>React、Node.js、MongoDBを使用したフルスタックEコマースアプリケーション</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                    <span class="tech-tag">Stripe</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link">Live Demo</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="project-card featured" data-category="mobile-app">
                             <div class="project-image">
-                                <img src="../assets/images/task-manager.jpg" alt="Task Manager" class="project-img">
+                                <img src="../assets/images/trade-note-app.png" alt="Trade Note App" class="project-img">
                             </div>
                             <div class="project-content">
-                                <h4>タスク管理アプリ</h4>
-                                <p>React Nativeで開発したモバイルタスク管理アプリケーション</p>
+                                <h4>トレードノート</h4>
+                                <p>投資家向けのトレード記録・分析アプリケーション。取引履歴の記録、パフォーマンス分析、チャート表示機能を提供します。</p>
                                 <div class="project-tech">
                                     <span class="tech-tag">React Native</span>
-                                    <span class="tech-tag">Firebase</span>
-                                    <span class="tech-tag">Redux</span>
+                                    <span class="tech-tag">Expo</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">PostgreSQL</span>
                                 </div>
-                                <div class="project-links">
+                                <div class="project-features">
+                                    <h5>主な機能</h5>
+                                    <ul>
+                                        <li>取引記録の作成・編集・削除</li>
+                                        <li>リアルタイムの価格データ表示</li>
+                                        <li>パフォーマンス分析とレポート生成</li>
+                                        <li>チャート表示とテクニカル分析</li>
+                                        <li>ポートフォリオ管理</li>
+                                        <li>プッシュ通知機能</li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
                                     <a href="#" class="project-link">App Store</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Web Applications -->
-                <div class="project-category">
-                    <h3 class="category-title">Webアプリケーション</h3>
-                    <div class="project-grid">
-                        <div class="project-card" data-category="web-app">
-                            <div class="project-content">
-                                <h4>天気予報アプリ</h4>
-                                <p>OpenWeatherMap APIを使用した天気予報アプリケーション</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">HTML5</span>
-                                    <span class="tech-tag">CSS3</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link">Live Demo</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-category="web-app">
-                            <div class="project-content">
-                                <h4>ToDoリスト</h4>
-                                <p>ローカルストレージを使用したシンプルなToDoリスト</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">LocalStorage</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link">Live Demo</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-category="web-app">
-                            <div class="project-content">
-                                <h4>計算機アプリ</h4>
-                                <p>基本的な四則演算ができる計算機アプリケーション</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">CSS Grid</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link">Live Demo</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Science Projects -->
-                <div class="project-category">
-                    <h3 class="category-title">データサイエンス</h3>
-                    <div class="project-grid">
-                        <div class="project-card" data-category="data-science">
-                            <div class="project-content">
-                                <h4>株価予測モデル</h4>
-                                <p>機械学習を使用した株価予測システム</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">scikit-learn</span>
-                                    <span class="tech-tag">pandas</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link">Jupyter Notebook</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-category="data-science">
-                            <div class="project-content">
-                                <h4>データ可視化ダッシュボード</h4>
-                                <p>PlotlyとDashを使用したインタラクティブなデータ可視化</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Plotly</span>
-                                    <span class="tech-tag">Dash</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link">Live Demo</a>
-                                    <a href="#" class="project-link">GitHub</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -218,11 +121,10 @@
                     <div class="skill-category">
                         <h3>フロントエンド</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
                             <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Expo</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
                         </div>
                     </div>
 
@@ -230,26 +132,25 @@
                         <h3>バックエンド</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
                             <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">RESTful API</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h3>データベース</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQL</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
-                        <h3>その他</h3>
+                        <h3>開発・デプロイ</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Expo CLI</span>
                         </div>
                     </div>
                 </div>
