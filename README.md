@@ -1,13 +1,46 @@
 # Portfolio Website
 
-個人ポートフォリオサイトです。Google Analytics 4を使用してユーザー行動を分析しています。
+A personal portfolio website built with HTML5, CSS3, and JavaScript.
 
-## 📋 ページ構成
+## Features
 
-- **Home**: 自己紹介と最新更新情報
-- **Certification**: 取得資格一覧と取得過程
-- **Portfolio**: 自作アプリケーション一覧
-- **Contact**: SNSアカウント情報
+- Responsive design
+- Google Analytics integration
+- Automated testing with Jest
+- GitHub Actions for CI/CD
+- Auto-merge enabled for pull requests
+
+## Pages
+
+- **Home**: Introduction and latest updates
+- **Certification**: List of certifications and acquisition process
+- **Portfolio**: Collection of personal projects
+- **Contact**: Social media and contact information
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run tests
+npm test
+
+# Format code
+npm run format
+```
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+## Auto-Merge Workflow
+
+1. Create a new branch for your changes
+2. Make your changes and commit them
+3. Push the branch to GitHub
+4. Create a Pull Request
+5. The PR will be automatically merged if all checks pass
 
 ## 🚀 セットアップ
 
@@ -61,6 +94,6 @@ npm test
 4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
 5. プルリクエストを作成
 
-## �� ライセンス
+## 📋 ライセンス
 
 MIT License 
