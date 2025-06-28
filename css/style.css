@@ -398,6 +398,7 @@ section {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .timeline::before {
@@ -434,6 +435,8 @@ section {
     font-weight: 600;
     white-space: nowrap;
     z-index: 1;
+    min-width: 120px;
+    text-align: center;
 }
 
 .timeline-content {
@@ -444,6 +447,29 @@ section {
     margin: 0 2rem;
     flex: 1;
     max-width: 300px;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
 }
 
 .timeline-content h3 {
@@ -455,6 +481,7 @@ section {
 .timeline-content p {
     color: var(--text-light);
     font-size: 0.9rem;
+    margin: 0;
 }
 
 /* Portfolio Page Styles */
@@ -824,4 +851,255 @@ section {
 
 .mt-2 {
     margin-top: 2rem;
+}
+
+/* AWS Cloud Practitioner Detail Page Styles */
+
+/* Certificate Overview */
+.cert-overview {
+    background-color: var(--background-light);
+    padding: 60px 0;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.overview-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.overview-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.overview-card p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Learning Materials */
+.learning-materials {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.material-card {
+    background-color: var(--background-light);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+.material-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.material-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.material-type {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.material-content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.material-content ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.material-content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.material-link {
+    margin-top: 1.5rem;
+}
+
+/* Learning Method */
+.learning-method {
+    background-color: var(--background-light);
+    padding: 60px 0;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.method-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.method-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.method-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.method-card ul {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.method-card li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+/* Key Learnings */
+.key-learnings {
+    background-color: var(--background-light);
+    padding: 60px 0;
+}
+
+.learnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.learning-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.learning-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.learning-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Tips Section */
+.tips-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.tips-list {
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.tip-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.tip-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.tip-number {
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.tip-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.tip-content p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Make cert-card clickable */
+.cert-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cert-card:hover {
+    text-decoration: none;
+    color: inherit;
 }

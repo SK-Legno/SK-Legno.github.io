@@ -91,20 +91,252 @@
         margin-bottom: 2rem;
     }
 
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    /* Skills */
+    .skills h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-tags {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .skill-tag {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    /* Certifications */
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cert-card {
+        padding: 1.5rem;
+    }
+
+    .cert-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .cert-header h4 {
+        font-size: 1.1rem;
+    }
+
+    .cert-date {
+        font-size: 0.85rem;
+    }
+
+    .cert-stats {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .stat {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Projects */
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card.featured {
+        grid-column: span 1;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .project-tech {
+        gap: 0.4rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .project-features h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-features ul {
+        padding-left: 1rem;
+    }
+
+    .project-features li {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    /* Skills Used Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .skill-category h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Contact Form */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-section,
+    .social-section {
+        padding: 1.5rem;
+    }
+
+    .contact-form {
+        gap: 1rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    /* Social Cards */
+    .social-cards {
+        gap: 1rem;
+    }
+
+    .social-card {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-content h3 {
+        font-size: 1rem;
+    }
+
+    .social-content p {
+        font-size: 0.85rem;
+    }
+
+    .social-content .social-link {
+        font-size: 0.9rem;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: row !important;
+        margin-left: 40px;
+    }
+
+    .timeline-date {
+        position: absolute;
+        left: -60px;
+        min-width: 100px;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .timeline-content {
+        margin: 0;
+        max-width: none;
+        flex: 1;
+    }
+
+    .timeline-content::before {
+        left: -10px !important;
+        right: auto !important;
+        border-width: 10px 10px 10px 0 !important;
+        border-color: transparent white transparent transparent !important;
+    }
+
     /* Updates Grid */
     .updates-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
+    .update-card {
+        padding: 1.5rem;
+    }
+
+    .update-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .update-card p {
+        font-size: 0.9rem;
+    }
+
+    .update-date {
+        font-size: 0.85rem;
+    }
+
     /* Footer */
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 0.25rem;
+    }
+
+    .footer-section a {
+        font-size: 0.9rem;
     }
 
     .social-links {
         justify-content: center;
+        gap: 1rem;
+    }
+
+    .social-link {
+        font-size: 0.9rem;
     }
 }
 
@@ -139,12 +371,175 @@
         font-size: 1.5rem;
     }
 
-    .update-card {
-        padding: 1.5rem;
+    /* About Section */
+    .about-text p {
+        font-size: 0.95rem;
     }
 
-    .skill-tags {
-        justify-content: center;
+    .skills h3 {
+        font-size: 1.1rem;
+    }
+
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    /* Certifications */
+    .cert-card {
+        padding: 1.25rem;
+    }
+
+    .cert-header h4 {
+        font-size: 1rem;
+    }
+
+    .cert-date {
+        font-size: 0.8rem;
+    }
+
+    .cert-content p {
+        font-size: 0.9rem;
+    }
+
+    .cert-details h5 {
+        font-size: 0.9rem;
+    }
+
+    .cert-details li {
+        font-size: 0.85rem;
+    }
+
+    .stat {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    /* Projects */
+    .project-content {
+        padding: 1.25rem;
+    }
+
+    .project-content h4 {
+        font-size: 1rem;
+    }
+
+    .project-content p {
+        font-size: 0.9rem;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
+
+    .project-features h5 {
+        font-size: 0.9rem;
+    }
+
+    .project-features li {
+        font-size: 0.85rem;
+    }
+
+    /* Skills Used */
+    .skill-category h3 {
+        font-size: 1rem;
+    }
+
+    /* Contact Form */
+    .contact-form-section,
+    .social-section {
+        padding: 1.25rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    /* Social Cards */
+    .social-card {
+        padding: 0.75rem;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .social-content p {
+        font-size: 0.8rem;
+    }
+
+    .social-content .social-link {
+        font-size: 0.85rem;
+    }
+
+    /* Updates */
+    .update-card {
+        padding: 1.25rem;
+    }
+
+    .update-card h3 {
+        font-size: 1rem;
+    }
+
+    .update-card p {
+        font-size: 0.85rem;
+    }
+
+    .update-date {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+
+    .social-link {
+        font-size: 0.85rem;
+    }
+
+    /* Timeline for extra small screens */
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-item {
+        margin-left: 30px;
+    }
+
+    .timeline-date {
+        left: -45px;
+        min-width: 80px;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.85rem;
     }
 }
 
@@ -166,6 +561,45 @@
     .profile-image {
         width: 150px;
         height: 150px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .nav-link {
+        padding: 12px 8px;
+    }
+
+    .skill-tag {
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tech-tag {
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        min-height: 44px;
+    }
+
+    .social-card {
+        min-height: 60px;
+    }
+
+    .project-card,
+    .cert-card,
+    .update-card {
+        cursor: pointer;
     }
 }
 
@@ -202,4 +636,231 @@
         color: black;
         border: 1px solid #ccc;
     }
+}
+
+/* AWS Cloud Practitioner Detail Page */
+.overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.overview-card {
+    padding: 1.5rem;
+}
+
+.overview-card h3 {
+    font-size: 1rem;
+}
+
+.overview-card p {
+    font-size: 1.1rem;
+}
+
+.material-card {
+    padding: 1.5rem;
+}
+
+.material-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.material-header h3 {
+    font-size: 1.25rem;
+}
+
+.method-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.method-card {
+    padding: 1.5rem;
+}
+
+.method-icon {
+    font-size: 2.5rem;
+}
+
+.method-card h3 {
+    font-size: 1.1rem;
+}
+
+.method-card p {
+    font-size: 0.9rem;
+}
+
+/* Study Schedule Timeline */
+.schedule-timeline::before {
+    left: 20px;
+}
+
+.schedule-item {
+    flex-direction: row !important;
+    margin-left: 40px;
+}
+
+.schedule-week {
+    position: absolute;
+    left: -60px;
+    min-width: 80px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.schedule-content {
+    margin: 0;
+    max-width: none;
+    flex: 1;
+}
+
+.learnings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.learning-card {
+    padding: 1.5rem;
+}
+
+.learning-card h3 {
+    font-size: 1rem;
+}
+
+.learning-card p {
+    font-size: 0.85rem;
+}
+
+.tip-item {
+    padding: 1rem;
+}
+
+.tip-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.tip-content h3 {
+    font-size: 1rem;
+}
+
+.tip-content p {
+    font-size: 0.85rem;
+}
+
+/* AWS Cloud Practitioner Detail Page for extra small screens */
+.overview-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.overview-card {
+    padding: 1.25rem;
+}
+
+.overview-card h3 {
+    font-size: 0.9rem;
+}
+
+.overview-card p {
+    font-size: 1rem;
+}
+
+.material-card {
+    padding: 1.25rem;
+}
+
+.material-header h3 {
+    font-size: 1.1rem;
+}
+
+.material-type {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.method-card {
+    padding: 1.25rem;
+}
+
+.method-icon {
+    font-size: 2rem;
+}
+
+.method-card h3 {
+    font-size: 1rem;
+}
+
+.method-card p {
+    font-size: 0.9rem;
+}
+
+.method-card li {
+    font-size: 0.8rem;
+}
+
+/* Study Schedule Timeline for extra small screens */
+.schedule-timeline::before {
+    left: 15px;
+}
+
+.schedule-item {
+    margin-left: 30px;
+}
+
+.schedule-week {
+    left: -45px;
+    min-width: 70px;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.schedule-content {
+    padding: 1rem;
+}
+
+.schedule-content h3 {
+    font-size: 1rem;
+}
+
+.schedule-content p {
+    font-size: 0.85rem;
+}
+
+.schedule-content li {
+    font-size: 0.8rem;
+}
+
+.learning-card {
+    padding: 1.25rem;
+}
+
+.learning-card h3 {
+    font-size: 0.9rem;
+}
+
+.learning-card p {
+    font-size: 0.8rem;
+}
+
+.tip-item {
+    padding: 0.75rem;
+}
+
+.tip-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    margin-right: 0.75rem;
+}
+
+.tip-content h3 {
+    font-size: 0.9rem;
+}
+
+.tip-content p {
+    font-size: 0.8rem;
 }
